@@ -5,8 +5,8 @@ import azure.functions as func
 from telegram import Bot
 
 # Configuración
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8398438764:AAENEaFJfb6lBZxhymwYJq3YqRL0dJwb9bE")
-CHAT_ID = os.getenv("CHAT_ID", "@criptomonedasreto")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 bot = Bot(token=TELEGRAM_TOKEN)
 
 # Variables globales para guardar último precio
